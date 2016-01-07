@@ -1,7 +1,9 @@
-# enter an even number ofnames
+# enter an even number of names
 # when all names enter type done
 # randomize names
 # puts names out in groups of two
+# with odd number, last group should be a group of 3
+
 
 puts ""
 puts "Please enter the students' names and press enter"
