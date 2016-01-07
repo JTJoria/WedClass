@@ -9,18 +9,12 @@ class Tangerine
     @rotten = false
   end
 
-  def age_of_tangerine
-    years = 0
-      @age.each do |year|
-        unless year.rot
-          years = years + 1
-        end
-      end
-    return years
+  def increase_age
+    @age += 1
   end
 
-  def rotten_or_not
-    if year.rot < 5 then 
+  def rotten
+    if @age < 5
       rotten = false
     else 
       rotten = true
@@ -31,5 +25,8 @@ end
 tangerine = Tangerine.new
 p tangerine.age # should be 0
 p tangerine.rotten # should be false
-p age_of_tangerine
-p rotten_or_not
+p tangerine.increase_age
+6.times do
+  p tangerine.increase_age
+end
+p tangerine.rotten
