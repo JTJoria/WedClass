@@ -15,7 +15,7 @@ class CreditCard
   end
 
   def display_account_number
-    @account_number.pop (4)
+    @account_number.pop.to_s (4)
 
   end
 end
